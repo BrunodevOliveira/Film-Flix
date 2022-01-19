@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { MaterialModule } from './../shared/material/material.module';
 
 import { NgModule } from '@angular/core';
@@ -12,7 +13,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent
