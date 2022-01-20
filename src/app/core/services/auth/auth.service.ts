@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, user } from '@angular/fire/auth';
 import { Firestore } from '@angular/fire/firestore';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { collection, doc, setDoc } from 'firebase/firestore';
+import { collection, doc, setDoc, updateDoc} from 'firebase/firestore';
 import { docData } from 'rxfire/firestore';
 import { from, map, of, switchMap, tap } from 'rxjs';
 
@@ -53,6 +53,17 @@ export class AuthService {
     const users = collection(this.db, 'users')
     const userDoc = doc(users, uid)
 
-    return docData(userDoc).pipe(map((data) => data as User))
+    return docData(userDoc).pipe(map((data) => ({...data, birthdate: data['birthdate'].toDate()} as User)))
+  }
+
+  update(user: User) {
+    const users = collection(this.db, 'users')
+    const userDoc = doc(users, user.uid)
+
+    return from(updateDoc(userDoc, user as any))
+  }
+
+  logout() {
+    this.auth.signOut()
   }
 }
