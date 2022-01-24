@@ -1,0 +1,15 @@
+<a
+routerLink="{{result.media_type}}/{{result.id}}"
+[title] = "result.title || result.name"
+>
+<mat-grid-tile>
+<div>
+  <!--result.poster_path busca a imagem dinamicamente da propriedade | w300 é a largura da img | irá ter o alt de result.title se form filme ou de result.name se for série-->
+  <img
+    class="poster-image"
+    src="https://image.tmdb.org/t/p/w300/{{ result.poster_path }}"
+    [alt]="result.title || result.name"
+  >
+</div>
+</mat-grid-tile>
+</a>
