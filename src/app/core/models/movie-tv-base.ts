@@ -9,7 +9,7 @@ export interface MovieTvBase {
   video: boolean;
   vote_average: number;
   title: string;
-  name: string;
+  name: string; //para série
   overview: string;
   release_date: Date;
   id: number;

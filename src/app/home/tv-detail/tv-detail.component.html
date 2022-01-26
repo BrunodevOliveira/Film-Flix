@@ -1,1 +1,16 @@
-<p>tv-detail works!</p>
+<section *ngIf="detail$ | async as detail" class="section-details">
+  <img
+    src="https://image.tmdb.org/t/p/w300/{{ detail.poster_path }}"
+    alt=""
+  />
+  <h1 class="mat-h1">{{detail.name}}</h1>
+  <p class="mat-body-2">{{detail.overview}}</p>
+  <mat-chip-list>
+    <mat-chip color="accent" selected class="nota">{{detail.vote_average}}</mat-chip>
+  </mat-chip-list>
+
+  <img
+    src="https://image.tmdb.org/t/p/w300/{{ detail.backdrop_path }}"
+    alt="backdrop_path"
+  />
+</section>
