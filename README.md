@@ -1,27 +1,37 @@
-# Filmflix
+<p align="center">
+<img  src="https://raw.githubusercontent.com/DianadosSantos/FilmFlix_v1/main/src/assets/img/filmflix.png" width="800"/>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+<h1 align="center">FilmFlix</h1>
 
-## Development server
+<br>
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> ## Sobre o Projeto
 
-## Code scaffolding
+> Implementação desenvolvida para praticar o conhecimento adquirido durante o bootcamp de desenvolvedor Fullstack da [soulCode Academy]. O FilmFlix é uma aplicação que traz a sinópse e pontuação de filmes e séries. Essas informações são consumidas através da API do ``themoviedb``
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<br>
+<br>
 
-## Build
+> ## Tecnologias Utilizadas 🧰
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p>
+<img align="left" align="left" alt="git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img align="left" align="left" alt="git" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+<img align="left" align="left" alt="git" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+<img align="left" align="left" alt="git" src="https://img.shields.io/badge/-Firebase-orange" height="27"/>
+<img align="left" align="left" alt="git" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" height="27"/> 
+  
+</p>  
 
-## Running unit tests
+<br> 
+<br>
+<br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> ## Layout 🎨
 
-## Running end-to-end tests
+<img src="https://github.com/DianadosSantos/FilmFlix_v1/blob/main/src/assets/filmflix.gif" width="900" />
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> ## Link para o site 💻
+> https://filmflix-angular.web.app
