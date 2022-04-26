@@ -35,3 +35,13 @@
 
 > ## Link para o site 💻
 > https://filmflix-angular.web.app
+<br>
+<br>
+
+> ## Instalação 🎛️
+1) Abra o terminal e digite:
+``git clone https://github.com/BrunodevOliveira/Film-Flix.git``
+2) Abra o terminal na pasta da aplicação clonada e digite:
+``npm install``
+3) Após concluir as instalações, digite este comando para que a aplicação abra automaticamente em seu navegador padrão:
+``ng serve -o``
